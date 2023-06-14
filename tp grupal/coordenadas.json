@@ -1,0 +1,230 @@
+[
+    {
+        "image": "amorpopup.png",
+        "name": "amor",
+        "text_boxes": [
+            {
+                "top_left_x": 92,
+                "top_left_y": 148,
+                "bottom_right_x": 326,
+                "bottom_right_y": 360
+            },
+            {
+                "top_left_x": 389,
+                "top_left_y": 227,
+                "bottom_right_x": 710,
+                "bottom_right_y": 382
+            },
+            {
+                "top_left_x": 37,
+                "top_left_y": 553,
+                "bottom_right_x": 188,
+                "bottom_right_y": 665
+            },
+            {
+                "top_left_x": 184,
+                "top_left_y": 697,
+                "bottom_right_x": 335,
+                "bottom_right_y": 807
+            },
+            {
+                "top_left_x": 38,
+                "top_left_y": 830,
+                "bottom_right_x": 187,
+                "bottom_right_y": 941
+            },
+            {
+                "top_left_x": 389,
+                "top_left_y": 602,
+                "bottom_right_x": 668,
+                "bottom_right_y": 897
+            }
+        ]
+    },
+    {
+        "image": "aydpopup.png",
+        "name": "antes y despues",
+        "text_boxes": [
+            {
+                "top_left_x": 119,
+                "top_left_y": 256,
+                "bottom_right_x": 332,
+                "bottom_right_y": 471
+            },
+            {
+                "top_left_x": 385,
+                "top_left_y": 258,
+                "bottom_right_x": 599,
+                "bottom_right_y": 473
+            },
+            {
+                "top_left_x": 121,
+                "top_left_y": 581,
+                "bottom_right_x": 337,
+                "bottom_right_y": 801
+            },
+            {
+                "top_left_x": 387,
+                "top_left_y": 584,
+                "bottom_right_x": 604,
+                "bottom_right_y": 797
+            }
+        ]
+    },
+    {
+        "image": "cienciapopup.png",
+        "name": "ciencia",
+        "text_boxes": [
+            {
+                "top_left_x": 279,
+                "top_left_y": 253,
+                "bottom_right_x": 684,
+                "bottom_right_y": 481
+            },
+            {
+                "top_left_x": 37,
+                "top_left_y": 544,
+                "bottom_right_x": 242,
+                "bottom_right_y": 739
+            },
+            {
+                "top_left_x": 284,
+                "top_left_y": 545,
+                "bottom_right_x": 492,
+                "bottom_right_y": 742
+            },
+            {
+                "top_left_x": 251,
+                "top_left_y": 794,
+                "bottom_right_x": 676,
+                "bottom_right_y": 931
+            }
+        ]
+    },
+    {
+        "image": "familiapopup.png",
+        "name": "familia",
+        "text_boxes": [
+            {
+                "top_left_x": 46,
+                "top_left_y": 148,
+                "bottom_right_x": 697,
+                "bottom_right_y": 476
+            },
+            {
+                "top_left_x": 64,
+                "top_left_y": 604,
+                "bottom_right_x": 232,
+                "bottom_right_y": 718
+            },
+            {
+                "top_left_x": 279,
+                "top_left_y": 605,
+                "bottom_right_x": 445,
+                "bottom_right_y": 717
+            },
+            {
+                "top_left_x": 502,
+                "top_left_y": 605,
+                "bottom_right_x": 670,
+                "bottom_right_y": 718
+            },
+            {
+                "top_left_x": 71,
+                "top_left_y": 778,
+                "bottom_right_x": 240,
+                "bottom_right_y": 893
+            },
+            {
+                "top_left_x": 285,
+                "top_left_y": 780,
+                "bottom_right_x": 452,
+                "bottom_right_y": 893
+            },
+            {
+                "top_left_x": 508,
+                "top_left_y": 780,
+                "bottom_right_x": 678,
+                "bottom_right_y": 894
+            }
+        ]
+    },
+    {
+        "image": "genericopopup.png",
+        "name": "generico",
+        "text_boxes": [
+            {
+                "top_left_x": 37,
+                "top_left_y": 37,
+                "bottom_right_x": 331,
+                "bottom_right_y": 361
+            },
+            {
+                "top_left_x": 387,
+                "top_left_y": 92,
+                "bottom_right_x": 528,
+                "bottom_right_y": 250
+            },
+            {
+                "top_left_x": 37,
+                "top_left_y": 418,
+                "bottom_right_x": 468,
+                "bottom_right_y": 545
+            },
+            {
+                "top_left_x": 529,
+                "top_left_y": 308,
+                "bottom_right_x": 702,
+                "bottom_right_y": 492
+            },
+            {
+                "top_left_x": 40,
+                "top_left_y": 712,
+                "bottom_right_x": 213,
+                "bottom_right_y": 899
+            },
+            {
+                "top_left_x": 384,
+                "top_left_y": 607,
+                "bottom_right_x": 681,
+                "bottom_right_y": 925
+            }
+        ]
+    },
+    {
+        "image": "naturalezapopup.png",
+        "name": "naturaleza",
+        "text_boxes": [
+            {
+                "top_left_x": 37,
+                "top_left_y": 19,
+                "bottom_right_x": 198,
+                "bottom_right_y": 171
+            },
+            {
+                "top_left_x": 253,
+                "top_left_y": 67,
+                "bottom_right_x": 495,
+                "bottom_right_y": 172
+            },
+            {
+                "top_left_x": 77,
+                "top_left_y": 381,
+                "bottom_right_x": 298,
+                "bottom_right_y": 544
+            },
+            {
+                "top_left_x": 442,
+                "top_left_y": 385,
+                "bottom_right_x": 663,
+                "bottom_right_y": 550
+            },
+            {
+                "top_left_x": 62,
+                "top_left_y": 634,
+                "bottom_right_x": 361,
+                "bottom_right_y": 931
+            }
+        ]
+    }
+]
