@@ -1,0 +1,164 @@
+[
+    {
+        "image": "Plantilla_1.jpg",
+        "name": "3 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 40,
+                "top_left_y": 37,
+                "bottom_right_x": 697,
+                "bottom_right_y": 302
+            },
+            {
+                "top_left_x": 41,
+                "top_left_y": 308,
+                "bottom_right_x": 697,
+                "bottom_right_y": 573
+            },
+            {
+                "top_left_x": 41,
+                "top_left_y": 581,
+                "bottom_right_x": 697,
+                "bottom_right_y": 843
+            }
+        ]
+    },
+    {
+        "image": "Plantilla_2.jpg",
+        "name": "6 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 41,
+                "top_left_y": 41,
+                "bottom_right_x": 352,
+                "bottom_right_y": 300
+            },
+            {
+                "top_left_x": 360,
+                "top_left_y": 38,
+                "bottom_right_x": 699,
+                "bottom_right_y": 300
+            },
+            {
+                "top_left_x": 40,
+                "top_left_y": 308,
+                "bottom_right_x": 355,
+                "bottom_right_y": 570
+            },
+            {
+                "top_left_x": 361,
+                "top_left_y": 310,
+                "bottom_right_x": 697,
+                "bottom_right_y": 571
+            },
+            {
+                "top_left_x": 40,
+                "top_left_y": 581,
+                "bottom_right_x": 355,
+                "bottom_right_y": 839
+            },
+            {
+                "top_left_x": 361,
+                "top_left_y": 579,
+                "bottom_right_x": 697,
+                "bottom_right_y": 841
+            }
+        ]
+    },
+    {
+        "image": "Plantilla_3.jpg",
+        "name": "3 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 41,
+                "top_left_y": 40,
+                "bottom_right_x": 356,
+                "bottom_right_y": 437
+            },
+            {
+                "top_left_x": 366,
+                "top_left_y": 41,
+                "bottom_right_x": 699,
+                "bottom_right_y": 437
+            },
+            {
+                "top_left_x": 41,
+                "top_left_y": 445,
+                "bottom_right_x": 697,
+                "bottom_right_y": 843
+            }
+        ]
+    },
+    {
+        "image": "Plantilla_4.jpg",
+        "name": "4 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 40,
+                "top_left_y": 40,
+                "bottom_right_x": 356,
+                "bottom_right_y": 439
+            },
+            {
+                "top_left_x": 363,
+                "top_left_y": 40,
+                "bottom_right_x": 697,
+                "bottom_right_y": 437
+            },
+            {
+                "top_left_x": 40,
+                "top_left_y": 444,
+                "bottom_right_x": 356,
+                "bottom_right_y": 844
+            },
+            {
+                "top_left_x": 363,
+                "top_left_y": 445,
+                "bottom_right_x": 697,
+                "bottom_right_y": 844
+            }
+        ]
+    },
+    {
+        "image": "Plantilla_5.jpg",
+        "name": "2 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 40,
+                "top_left_y": 40,
+                "bottom_right_x": 355,
+                "bottom_right_y": 844
+            },
+            {
+                "top_left_x": 363,
+                "top_left_y": 38,
+                "bottom_right_x": 699,
+                "bottom_right_y": 841
+            }
+        ]
+    },
+    {
+        "image": "Plantilla_6.jpg",
+        "name": "2 fotos",
+        "text_boxes": [
+            {
+                "top_left_x": 41,
+                "top_left_y": 40,
+                "bottom_right_x": 699,
+                "bottom_right_y": 436
+            },
+            {
+                "top_left_x": 43,
+                "top_left_y": 447,
+                "bottom_right_x": 699,
+                "bottom_right_y": 843
+            },
+            {
+                "top_left_x": 41,
+                "top_left_y": 852,
+                "bottom_right_x": 697,
+                "bottom_right_y": 925
+            }
+        ]
+    }
+]
