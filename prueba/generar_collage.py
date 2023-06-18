@@ -1,50 +1,98 @@
 import PySimpleGUI as sg
-from PIL import Image 
+import utilidades.abrir_fotos as abrir
+#import obtener_rutas as obtener_rutas
 
-
-
-sg.theme ('LightGrey4')
-
-
-
-
-def window_generar_collage(alias,plantilla,textbox):
-    window = sg.Window('',layout_generar_collage(), element_justification='c', size=(1366,768), resizable=True )
-    while True:
-        event, values = window.read()
-        if event == sg.WINDOW_CLOSED:
-            break
-        coordenadas=[]
-        cantidad_textboxes = len(textbox)
-        i=0
-        
-        if plantilla == "Plantilla_1.png":
-            # Obtener la cantidad de imágenes y las rutas de las imágenes
-            cantidad_imagenes, rutas_imagenes = obtener_imagenes(plantilla_seleccionada)
-            # Coordenadas de las imágenes en la plantilla
-            for i in range(cantidad_textboxes):
-                coordenadas.append((textbox[i]["top_left_x"], textbox[i]["top_left_y"]))
-            #variables que se pasan para poder hacer el resize de la imagen
-            x = 650
-            y = 260
-        elif plantilla == "Plantilla_2.png":
-            cantidad_imagenes, rutas_imagenes = obtener_imagenes(plantilla_seleccionada)
-            for i in range(cantidad_textboxes):
-                coordenadas.append((textbox[i]["top_left_x"], textbox[i]["top_left_y"]))
-            x = 300
-            y = 350
-        elif plantilla == "Plantilla_3.png":
-            cantidad_imagenes, rutas_imagenes = obtener_imagenes(plantilla_seleccionada)
-            for i in range(cantidad_textboxes):
-                coordenadas.append((textbox[i]["top_left_x"], textbox[i]["top_left_y"]))
-            x = 610
-            y = 400
-        elif plantilla == "Plantilla_4.png":
-            cantidad_imagenes, rutas_imagenes = obtener_imagenes(plantilla_seleccionada)
-            for i in range(cantidad_textboxes):
-                coordenadas.append((textbox[i]["top_left_x"],textbox[i]["top_left_y"]))
-            x = 320
-            y = 250
-        plantilla = pegar_imagenes(plantilla,cantidad_textboxes, coordenadas, x, y) 
-
-    window.close()   
+def layout_collage(foto,alias):
+    #imagenes, _ = obtener_rutas.obtener(alias)
+    boton_volver = [[sg.Button("< Volver", 
+                size=(20, 2), 
+                button_color=('black', 'skyblue'), 
+                font=('Helvetica', 12),
+                key='-VOLVER-')]]
+    boton_guardar = [[sg.Button('Guardar', 
+            size=(20, 2), 
+            button_color=('black', 'skyblue'), 
+            font=('Helvetica', 12),
+            key='-GUARDAR-')]]
+    boton_etiqueta = [[sg.Button(
+            'Ir a etiquetar', 
+            size=(20, 2), 
+            button_color=('black', 'skyblue'), 
+            font=('Helvetica', 12),
+            key='-ETIQUETAR-')]]
+    columna= [sg.Column(
+        boton_volver, 
+        element_justification='left', 
+        expand_x=True),
+        sg.Column(
+        boton_etiqueta, 
+        element_justification='left', 
+        expand_x=True),
+            sg.Column(
+        boton_guardar, 
+        element_justification='rigth', 
+        expand_x=True)]
+    columna_izquierda = [[sg.Text(
+        'Seleccionar imagenes: ', 
+        size=(30, 1), 
+        font=('Times New Roman', 15), 
+        text_color='Black', 
+        justification=('left'))],
+        [sg.Listbox(
+        #values=imagenes, #[arc["name"] for arc in templates], habrá que haerlo asi, reemplazando templates por las imagenes listadas en el csv?
+        enable_events=True, 
+        size=(40, 20),
+        key="-ARCHIVOS-",
+        background_color='skyblue',
+        text_color='black',
+        sbar_arrow_color='black', 
+        sbar_background_color='skyblue', 
+        highlight_background_color='steelblue',
+        highlight_text_color='white')],
+        [sg.Button(
+            'Agregar imagen',
+            size=(20, 2),
+            button_color=('black', 'skyblue'),
+            font=('Helvetica', 12),
+            key='-AGREGAR-'
+        )],
+        [sg.Text(
+        'Agregar titulo: ', 
+        size=(30, 1), 
+        font=('Times New Roman', 15), 
+        text_color='Black', 
+        justification=('left'))],
+        [sg.In(size=(50, 1), 
+        enable_events=True, 
+        key="-TEXTO-",
+        background_color='skyblue',
+        text_color='black'),
+        sg.Button('Enter', 
+        key="-ENTER-",
+        button_color='skyblue')]
+    ]
+    columna_derecha =[
+        [sg.Text(
+        'Previsualización', 
+        size=(30, 1), 
+        font=('Times New Roman', 15), 
+        text_color='Black', 
+        justification=('right'))],
+        [sg.Image(
+        data=abrir.abrir(foto), 
+        key='-IMAGE-',
+        size=(400,400),
+        subsample=0)]
+    ]
+    layout =[ 
+        [sg.Text(
+        'Generar Collage', 
+        size=(20, 1), 
+        font=('Times New Roman', 75), 
+        text_color='Black', 
+        justification=("c"))],
+        [sg.Column(columna_izquierda,justification='c'),
+        sg.Column(columna_derecha,justification='c')],  
+        [columna]]
+    
+    return layout
